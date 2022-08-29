@@ -1,0 +1,68 @@
+:root {
+    --color-darkblue: #0065FC;
+    --color-lightblue: #DEEBFF;
+    --color-grey: #F2F2F2;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:  'Raleway', sans-serif;
+}
+body {
+    width: 100vw;
+}
+/*-------Header---------*/
+/* div {
+    border: 1px solid red;
+} */
+header{
+   display: flex;
+   justify-content: space-between;
+}
+
+nav, ul {
+   
+    display: flex;
+    
+    list-style-type: none;
+}
+li {
+    margin: 0 10px 0 10px;
+    
+}
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: var(--color-darkblue)
+}
+/*------------main---------*/
+
+.a-icone {
+    display: flex;
+    border: 1px solid var(--color-grey);
+    border-radius: 50px;
+    color: var(--color-darkblue);
+    width: 44px;
+    height: 44px;;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+
+/* Responsive Tablette max 992px*/
+@media screen and (max-width: 992px) {}
+
+/* Responsive Smartphone max 768px*/
+
+@media screen and (max-width: 768px) {
+    .header-logo__img {
+        content:url("../images/logo/Booki@3x.png");
+    }
+    
+}

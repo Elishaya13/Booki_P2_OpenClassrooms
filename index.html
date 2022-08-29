@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>maquette</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/98dc963ba8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img class="header-logo__img" src="./images/logo/Booki.png" alt="Logo" />
+
+      <nav>
+        <ul>
+          <li><a href="#anchor-hebergement">Hébergements</a></li>
+          <li><a href="#anchor-activites">Activités</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h2>En plein centre ville ou en pleine nature</h2>
+      <div class="main-form">
+        <form action="submit.php" method="post">
+          <i class="fas fa-map-marker-alt"></i>
+          <label for="search"></label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Marseille, France"
+            name="user_search"
+          />
+          <button type="submit" name="submit" value="Rechercher">
+            Rechercher
+          </button>
+        </form>
+      </div>
+      <div>
+        <h4>Filtres</h4>
+        <div>
+          <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+          <button><i class="fa-solid fa-child-reaching"></i>Familial</button>
+          <button><i class="fa-solid fa-heart"></i>Romantique</button>
+          <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+        </div>
+      </div>
+      <h2>
+        <a class="a-icone"><i class="fa-solid fa-info"></i></a>
+        Plus de 500 logements sont disponibles dans cette ville
+      </h2>
+    </main>
+    <footer></footer>
+  </body>
+</html>
