@@ -7,17 +7,15 @@
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  margin: auto;
   list-style: none;
 }
-body {
-  max-width: 1440px;
-  margin: auto;
-}
-#container {
+
+#global-wrapper {
   width: 1440px;
   padding: 50px;
+  margin: auto;
 }
+
 /* ---------Typo------------ */
 .big-title {
   font-size: 20px;
@@ -68,18 +66,21 @@ a:hover {
   width: 100px;
   flex: 0.2;
 }
-/***** bouton de filtre *****/
+/***** Filter buttons *****/
 .list-button {
+  border: 1px solid black;
   width: 100%;
   flex: 3;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
+
 .btn-div {
   display: flex;
   border: 3px solid var(--color-grey);
   border-radius: 25px;
 }
+
 button {
   border: none;
   background-color: transparent;
