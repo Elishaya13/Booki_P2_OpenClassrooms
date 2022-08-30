@@ -1,45 +1,107 @@
 :root {
-    --color-darkblue: #0065FC;
-    --color-lightblue: #DEEBFF;
-    --color-grey: #F2F2F2;
+  --color-darkblue: #0065fc;
+  --color-lightblue: #deebff;
+  --color-grey: #f2f2f2;
 }
 
 * {
-    box-sizing: border-box;
-    font-family:  'Raleway', sans-serif;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  list-style: none;
 }
 body {
-    width: 100vw;
+  max-width: 1440px;
+  margin: auto;
+}
+#container {
+  width: 1440px;
+  padding: 50px;
+}
+/* ---------Typo------------ */
+.big-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.light-title {
+  font-size: 15px;
+  font-weight: 200;
 }
 /*-------Header---------*/
 /* div {
     border: 1px solid red;
 } */
-header{
-   display: flex;
-   justify-content: space-between;
+header {
+  display: flex;
+}
+#container-header-img {
+  flex: 3;
+}
+header img {
+  width: 10%;
+}
+#container-nav {
+  flex: 1;
+}
+ul {
+  display: flex;
 }
 
-nav, ul {
-   
-    display: flex;
-    
-    list-style-type: none;
-}
-li {
-    margin: 0 10px 0 10px;
-    
-}
-a, a:visited {
-    text-decoration: none;
-    color: black;
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-    color: var(--color-darkblue)
+  color: var(--color-darkblue);
+  font-weight: bold;
+  border-top: 1px solid var(--color-darkblue);
 }
 /*------------main---------*/
 
-.a-icone {
+/*----- filter-part----------- */
+
+.container-filtres {
+  display: flex;
+}
+.container-filtres h4 {
+  width: 100px;
+  flex: 0.2;
+}
+/***** bouton de filtre *****/
+.list-button {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+}
+.btn-div {
+  display: flex;
+  border: 3px solid var(--color-grey);
+  border-radius: 25px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  margin: 0 5px 0 5px;
+}
+.fa-solid {
+  color: var(--color-darkblue);
+}
+.ic-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -2px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  color: var(--color-darkblue);
+  background-color: var(--color-lightblue);
+}
+
+/* .a-icone {
     display: flex;
     border: 1px solid var(--color-grey);
     border-radius: 50px;
@@ -49,20 +111,80 @@ a:hover {
     justify-content: center;
     align-items: center;
    
+} */
+/******** barre de recherche ***************/
+.search-bar {
+  width: 420px;
+  border-radius: 10px;
+  margin: 23px 0 23px 0;
+}
+.search-bar input,
+.search-bar:focus {
+  border: none;
+  height: 50px;
+  outline: none;
+
+  font: bold;
+  text-indent: 10px;
+}
+.search-bar input::placeholder {
+  color: black;
+  font-weight: bold;
 }
 
+.search-bar i {
+  height: 50px;
+  width: 50px;
+  border: 1px solid grey;
+  border-radius: 15px 0 0 15px;
+  background-color: var(--color-grey);
+  font-size: 18px;
+}
+.search-bar button {
+  border: none;
+  width: 135px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  background-color: var(--color-darkblue);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+i.fas {
+  display: inline-block;
+  border: rgba(128, 128, 128, 0);
+  padding: 18px 20px 15px 18px;
+}
 
+/*-------- Hebergments a marseille------ */
+#section-hebergements {
+  display: flex;
+}
+.container-cards-result {
+  width: 66%;
+  background-color: var(--color-grey);
+}
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
+.result-card {
+  width: 30%;
+}
+.container-cards-pop {
+  width: 33%;
+  background-color: var(--color-grey);
+}
 
 /* Responsive Tablette max 992px*/
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+}
 
 /* Responsive Smartphone max 768px*/
 
 @media screen and (max-width: 768px) {
-    .header-logo__img {
-        content:url("../images/logo/Booki@3x.png");
-    }
-    
+  .header-logo__img {
+    content: url("../images/logo/Booki@3x.png");
+  }
 }

@@ -21,49 +21,219 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
-      <img class="header-logo__img" src="./images/logo/Booki.png" alt="Logo" />
-
-      <nav>
-        <ul>
-          <li><a href="#anchor-hebergement">Hébergements</a></li>
-          <li><a href="#anchor-activites">Activités</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <h2>En plein centre ville ou en pleine nature</h2>
-      <div class="main-form">
-        <form action="submit.php" method="post">
-          <i class="fas fa-map-marker-alt"></i>
-          <label for="search"></label>
-          <input
-            type="text"
-            id="search"
-            placeholder="Marseille, France"
-            name="user_search"
-          />
-          <button type="submit" name="submit" value="Rechercher">
-            Rechercher
-          </button>
-        </form>
-      </div>
-      <div>
-        <h4>Filtres</h4>
-        <div>
-          <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-          <button><i class="fa-solid fa-child-reaching"></i>Familial</button>
-          <button><i class="fa-solid fa-heart"></i>Romantique</button>
-          <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+  <div id="container">
+    <body>
+      <!---------En tête -------------------- -->
+      <header>
+        <div id="container-header-img">
+          <img src="./images/logo/Booki@3x.png" alt="Logo" />
         </div>
-      </div>
-      <h2>
-        <a class="a-icone"><i class="fa-solid fa-info"></i></a>
-        Plus de 500 logements sont disponibles dans cette ville
-      </h2>
-    </main>
-    <footer></footer>
-  </body>
+
+        <nav id="container-nav">
+          <ul>
+            <li>
+              <a href="#anchor-hebergement">Hébergements</a>
+            </li>
+            <li>
+              <a href="#anchor-activites">Activités</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!------------ Partie main ------------------>
+      <main>
+        <!--------- partie filtre ------------->
+        <section id="filter-part">
+          <h1 class="big-title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <h2 class="light-title">En plein centre ville ou en pleine nature</h2>
+          <div class="search-bar">
+            <form>
+              <i class="fas fa-map-marker-alt"></i>
+              <input
+                type="text"
+                placeholder="Marseille, France"
+                name="search"
+              />
+              <button type="submit">Rechercher</button>
+            </form>
+          </div>
+          <div class="container-filtres">
+            <h4 class="big-title">Filtres</h4>
+            <div class="list-button">
+              <div class="btn-div">
+                <div><i class="fa-solid fa-money-bill-wave ic-filter"></i></div>
+                <div><button>Economique</button></div>
+              </div>
+              <div class="btn-div">
+                <div><i class="fa-solid fa-child-reaching ic-filter"></i></div>
+                <div><button>Familial</button></div>
+              </div>
+              <div class="btn-div">
+                <div><i class="fa-solid fa-heart ic-filter"></i></div>
+                <div><button>Romantique</button></div>
+              </div>
+              <div class="btn-div">
+                <div><i class="fa-solid fa-dog ic-filter"></i></div>
+                <div><button>Animaux autorisés</button></div>
+              </div>
+            </div>
+          </div>
+          <h2>
+            <i class="fa-solid fa-info"></i>
+            Plus de 500 logements sont disponibles dans cette ville
+          </h2>
+        </section>
+        <!---------------- Hebergements a Marseille ----------------->
+        <section id="section-hebergements">
+          <!-- div hebergments -->
+          <div class="container-cards-result">
+            <h3 class="big-title">Hébergements à Marseille</h3>
+            <div class="container-cards">
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+              <article class="result-card">
+                <img src="" alt="auberge la cannebiere" />
+                <h4>Auberge La Cannebière</h4>
+                <h5>Nuit à partir de 25€</h5>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </article>
+            </div>
+          </div>
+          <!-- div les plus populaires -->
+          <div class="container-cards-pop">
+            <h3 class="big-title">
+              Les plus populaires <i class="fa-solid fa-star"></i>
+            </h3>
+            <article class="popular-card">
+              <img src="" alt="Hotel le soleil du matin" />
+              <h4>Hotel Le soleil du matin</h4>
+              <h5>Nuit à partir de 128€</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </article>
+            <article class="popular-card">
+              <img src="" alt="Hotel le soleil du matin" />
+              <h4>Hotel Le soleil du matin</h4>
+              <h5>Nuit à partir de 128€</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </article>
+            <article class="popular-card">
+              <img src="" alt="Hotel le soleil du matin" />
+              <h4>Hotel Le soleil du matin</h4>
+              <h5>Nuit à partir de 128€</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </article>
+          </div>
+        </section>
+        <!-- Partie activités a Marseille -->
+        <section>
+          <h3 class="big-title">Activités à Marseille</h3>
+          <div>
+            <!-- partie 6cards cards -->
+            <div>
+              <!-- card solo -->
+              <div>
+                <img src="" alt="Vieux port" />
+                <h4>Vieux Port</h4>
+              </div>
+              <div>
+                <img src="" alt="Fort de Pomègues" />
+                <h4>Fort de Pomègues</h4>
+              </div>
+              <div>
+                <img src="" alt="Iles du Frioul" />
+                <h4>Iles du frioul</h4>
+              </div>
+              <div>
+                <img src="" alt="Parc national des calanques" />
+                <h4>Parc National des Calanques</h4>
+              </div>
+              <div>
+                <img src="" alt="Notre dame" />
+                <h4>notre-Dame-de-la-Garde</h4>
+              </div>
+              <div>
+                <img src="" alt="Parc Longchamp" />
+                <h4>Parc Longchamp</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!---------- partie footer ------------->
+      <footer>
+        <div>
+          <div>
+            <h4>A propos</h4>
+            <ul>
+              <li class="light-title">Fonctionnement du site</li>
+              <li class="light-title">Conditions génèrales de vente</li>
+              <li class="light-title">Données et confidentialité</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Nos hébergements</h4>
+            <ul>
+              <li class="light-title">Charte de qualité</li>
+              <li class="light-title">Soumettre votre hôtel</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Assistance</h4>
+            <ul>
+              <li class="light-title">Centre d'aide</li>
+              <li class="light-title">Nous contacter</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </div>
 </html>
