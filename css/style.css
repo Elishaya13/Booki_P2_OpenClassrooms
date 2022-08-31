@@ -2,13 +2,18 @@
   --color-darkblue: #0065fc;
   --color-lightblue: #deebff;
   --color-grey: #f2f2f2;
+  --color-darkgrey: #D9D9D9
 }
 
-* {
+*,
+::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   list-style: none;
 }
+
 
 #global-wrapper {
   width: 1440px;
@@ -27,14 +32,7 @@
   font-weight: 200;
 }
 
-i.fas {
-  display: inline-block;
-  padding: 18px 20px 15px 18px;
-}
-
 i.fa-solid {
-  display: inline-block;
-  padding: 18px 20px 15px 18px;
   color: var(--color-darkblue);
 }
 
@@ -44,6 +42,7 @@ i.fa-solid {
 } */
 header {
   display: flex;
+  align-items: flex-start;
 }
 
 #container-header-img {
@@ -54,8 +53,16 @@ header img {
   width: 10%;
 }
 
-#container-nav {
-  flex: 1;
+#container-nav a {
+  padding: 45px;
+  border-top: 2px solid transparent;
+
+}
+
+#container-nav a:hover {
+  border-top: 2px solid var(--color-darkblue);
+
+  color: var(--color-darkblue);
 }
 
 ul {
@@ -68,11 +75,6 @@ a:visited {
   color: black;
 }
 
-a:hover {
-  color: var(--color-darkblue);
-  font-weight: bold;
-  border-top: 1px solid var(--color-darkblue);
-}
 
 /*-------------------------------------------------main---------*/
 
@@ -80,7 +82,11 @@ a:hover {
 .search-bar {
   width: 420px;
   border-radius: 10px;
-  margin: 23px 0 23px 0;
+  margin: 23px 0 31px 0;
+}
+
+.search-bar form {
+  display: flex;
 }
 
 .search-bar input,
@@ -104,6 +110,9 @@ a:hover {
   border-radius: 15px 0 0 15px;
   background-color: var(--color-grey);
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar button {
@@ -131,9 +140,7 @@ a:hover {
 
 /******************************************* Filter buttons *******************/
 .list-button {
-  /* border: 1px solid black; */
   width: 100%;
-  /* flex: 3; */
   display: flex;
   justify-content: space-around;
 }
@@ -142,9 +149,10 @@ a:hover {
   width: fit-content;
   border-radius: 50px;
   height: 52px;
-  border: 3px solid #D9D9D9;
+  border: 3px solid var(--color-darkgrey);
   display: flex;
   align-items: center;
+  margin: 31px 0 35px 0;
 
 }
 
@@ -164,10 +172,32 @@ a:hover {
   border: none;
   background-color: transparent;
   font-weight: bold;
-  /* margin: 0 5px 0 0px; */
+  margin: 0 10px 0 10px;
   font-size: large;
 }
 
+.p-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+
+}
+
+.p-info i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-darkgrey);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.p-info p {
+  display: flex;
+}
 
 /*-------- Hebergments a marseille------ */
 #section-hebergements {
