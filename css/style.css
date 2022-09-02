@@ -249,6 +249,7 @@ ul {
 }
 
 /****** vignette hebergement *******/
+/* commentaire : postion relative au parent card pour mettre absolute sur les enfants et les placer ou l'on veut avec les top, bottom... */
 .result-card {
   display: flex;
   flex-direction: column;
@@ -313,6 +314,8 @@ ul {
 }
 
 /****** vignettes populaires ***********/
+
+/* commentaire : postion relative au parent card pour mettre absolute sur les enfants et les placer ou l'on veut avec les right, left, top, bottom... */
 .popular-card {
 
   width: 85%;
@@ -355,24 +358,76 @@ ul {
   gap: 12px;
 }
 
-/* .popular-card div {
-  border: 1px solid pink;
-  height: 90%;
-  width: 65%;
-  border-radius: 0 15px 15px 0;
-  position: absolute;
+/* ---------------------------------section Activités----------------- */
+
+#activites {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  right: 0;
+  width: 1440px;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.container-activity {
+  width: 100%;
+  height: 444px;
+  display: flex;
+  gap: 4.3%;
+  margin-top: 1.5%;
+}
+
+.solo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
 }
 
-.stars-rate-pop {
-  height: 15%;
+.duo {
+  width: 20%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
-} */
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+/* commentaire : postion relative au parent card pour mettre absolute sur les enfants et les placer ou l'on veut avec les top, bottom... */
+.activity-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 14px 1px #d9d9d9;
+  box-shadow: 0px 0px 14px 1px #d9d9d9;
+  border-radius: 15px;
+}
+
+
+.activity-card img {
+  width: 100%;
+  height: 90%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.activity-card h4 {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  border-radius: 0 0 15px 15px;
+
+}
 
 /* Responsive Tablette max 992px*/
 @media screen and (max-width: 992px) {}
