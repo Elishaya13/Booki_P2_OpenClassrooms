@@ -530,7 +530,6 @@ footer {
   #global-wrapper {
     width: 100%;
     max-width: 992px;
-    border: 1px solid red;
     margin: auto;
   }
 
@@ -736,4 +735,28 @@ footer {
   .header-logo__img {
     content: url("../images/logo/Booki@3x.png");
   }
+
+  #container-header-nav {
+    width: 100%;
+  }
+
+  #container-header-nav ul {
+
+    width: 100%;
+    border-bottom: 2px solid var(--color-grey);
+    padding: 5px;
+    justify-content: space-between;
+
+  }
+
+  #container-header-nav li {
+
+    text-align: center;
+  }
+
+  #container-header-nav a {
+    /* border-bottom: 2px solid var(--color-grey); */
+
+  }
+
 }
