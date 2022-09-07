@@ -23,6 +23,7 @@
 }
 
 /* **************** Style général**********************/
+
 .big-title {
   font-size: 20px;
 }
@@ -120,7 +121,7 @@ header {
 }
 
 .search-bar input::placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -188,8 +189,8 @@ header {
 
 .filter-buttons:hover {
   cursor: pointer;
-  background-color: var(--color-darkblue);
-  color: green;
+  background-color: #deebff79;
+
 }
 
 .filter-buttons i {
@@ -204,6 +205,7 @@ header {
 }
 
 .filter-buttons button {
+
   line-height: 52px;
   border: none;
   background-color: transparent;
@@ -214,9 +216,9 @@ header {
   color: black;
 }
 
-.filter-buttons button:hover {
+/* .filter-buttons button:hover {
   color: white;
-}
+} */
 
 .part-info {
   display: flex;
@@ -880,10 +882,13 @@ footer {
     font-size: 14px;
   }
 
-
-
   .part-info {
     margin: 15px 0 30px 0;
+  }
+
+  .part-info p {
+    width: 80%;
+
   }
 
   /* ----Part hebergements ----*/
@@ -961,16 +966,14 @@ footer {
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    padding: 30px 0 20px 30px;
+    padding: 30px 0 50px 30px;
     margin-top: 0;
-    gap: 15px;
+    gap: 25px;
   }
 
   .footer-card {
     width: 100%;
     padding: 0;
-
-
   }
 
   .footer-card ul {
