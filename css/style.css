@@ -68,10 +68,8 @@ a:hover {
 }
 
 /********************************* HEADER ****************/
-border: 1px solid red;
-}
 
-*/ header {
+header {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
