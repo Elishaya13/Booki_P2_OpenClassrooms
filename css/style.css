@@ -115,12 +115,13 @@ header {
   border: 1px solid var(--color-bordure-grey);
   height: 50px;
   outline: none;
-  font: bold;
+  font-weight: bold;
   text-indent: 10px;
 }
 
 .search-bar input::placeholder {
   color: rgba(0, 0, 0, 0.5);
+
 }
 
 .search-bar i {
@@ -146,8 +147,24 @@ header {
   cursor: pointer;
 }
 
+.btn-search-submit {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-search-submit i {
-  display: none;
+  visibility: collapse;
+
+}
+
+.btn-search-submit span {
+  visibility: visible;
+  color: white;
+  position: absolute;
+
+
 }
 
 /******************* filter-part ************* **/
@@ -278,11 +295,16 @@ header {
 
 .result-card img {
   width: 95%;
-  height: 70%;
+  height: 65%;
   position: absolute;
   top: 7px;
   border-radius: 15px;
   object-fit: cover;
+}
+
+.result-card picture {
+  width: 95%;
+
 }
 
 .result-card-text {
@@ -291,7 +313,7 @@ header {
   justify-content: space-evenly;
   align-items: flex-start;
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 37%;
   padding: 8px 0 8px 15px;
   background: white;
@@ -345,6 +367,10 @@ header {
 .popular-card:hover {
   --webkit-box-shadow: 0px 0px 14px 1px var(--color-darkblue);
   box-shadow: 0px 0px 14px 1px var(--color-darkblue);
+}
+
+.popular-card picture {
+  height: 90%;
 }
 
 .popular-card img {
@@ -571,10 +597,14 @@ footer {
   }
 
   .btn-search-submit i {
-    display: flex;
+    visibility: visible;
     color: white;
     background-color: var(--color-darkblue);
     border-radius: 0 15px 15px 0;
+  }
+
+  .btn-search-submit span {
+    visibility: collapse;
   }
 
   .container-filters {
@@ -839,6 +869,8 @@ footer {
     width: 90%;
     height: 200px;
   }
+
+
 
   .container-cards-result p {
     width: 90%;
