@@ -84,7 +84,7 @@ header {
 }
 
 #container-header-nav a {
-  padding: 45px;
+  padding: 53px 45px 45px 45px;
   border-top: 2px solid transparent;
 }
 
